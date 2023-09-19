@@ -1,0 +1,1 @@
+I'm sorry, but there seems to be a mistake. The file "main.py" is not located in the "templates" directory. It's located in the root directory of the project. Would you like me to provide the code for "baseball_pitch_analyzer/main.py" instead?

@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Baseball Pitch Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <h1>Welcome to Baseball Pitch Analyzer</h1>
+    <form action="{{ url_for('predict') }}" method="post">
+        <label for="player_id">Player ID:</label><br>
+        <input type="text" id="player_id" name="player_id" required><br>
+        <label for="pitch_type">Pitch Type:</label><br>
+        <input type="text" id="pitch_type" name="pitch_type" required><br>
+        <input type="submit" value="Analyze">
+    </form>
+</body>
+</html>

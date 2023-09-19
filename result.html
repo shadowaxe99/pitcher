@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pitch Analysis Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Pitch Analysis Result</h1>
+        <div class="result">
+            <h2>Pitcher Performance</h2>
+            <p>{{ pitcher_performance }}</p>
+            <h2>Next Pitch Prediction</h2>
+            <p>{{ next_pitch_prediction }}</p>
+            <h2>Pitcher Improvement Insights</h2>
+            <p>{{ pitcher_improvement_insights }}</p>
+            <h2>Batter Strategy</h2>
+            <p>{{ batter_strategy }}</p>
+        </div>
+        <a href="{{ url_for('index') }}">Analyze another pitch</a>
+    </div>
+</body>
+</html>
